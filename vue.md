@@ -1,7 +1,7 @@
 # Vue相关面试题
 
 ## MVVM框架是什么
-* 一个model+view+vidwModel框架，数据模型model、viewModel连接两个，vue数据驱动，通过数据来显示视图层而不是节点操作
+* 一个model+view+viewModel框架，数据模型model、viewModel连接两个，vue数据驱动，通过数据来显示视图层而不是节点操作
 
 ## 双向绑定原理是什么
 * 采用的数据劫持结合发布者-订阅者模式的方式，通过Object.defineProperty()来劫持各个对象的setter、getter，在数据变动时发布消息给订阅者，触发相应的监听回调

@@ -18,7 +18,7 @@ opacity=0
 4、opacity,transition对她有效(毫无争议)
 
 ## 行内元素和块状元素的区别
-行内元素：会在水平方向排列，不能包含快级元素，设置width无效，height无效（可以设置line-height），margin上下无效，padding上下无效
+行内元素：会在水平方向排列，不能包含块级元素，设置width无效，height无效（可以设置line-height），margin上下无效，padding上下无效
 块级元素：各占据一行，垂直方向排列。从新行开始结束接着一个断行
 
 ## 使用link和@import有什么区别？
@@ -31,7 +31,10 @@ opacity=0
 2、3像素问题使用float引用的使用display:inline -3px;
 3、超链接hover后点击失效，使用正确的书写顺序 link visited hover active
 4、le z-index问题给父级添加position:relative
-5、png 透明使用js代码改
+5、png 透明使用js代码改， 使用滤镜解决IE6的PNG透明问题
+/*以下为IE6设置PNG透明代码*/
+_background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/W3CfunsLogo.png");
 6、min-height最小高度 ！important解决
 7、select 在ie6下遮盖 使用iframe嵌套
 8、为什么没有办法定义1px左右的宽度器（IE6默认的行高造成的，使用over:hidden,zoom:0.08,line-height:1px）

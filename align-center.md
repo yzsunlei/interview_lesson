@@ -11,7 +11,7 @@
 }
 ```
 
-2、position: absolute、top:50%、margin-top: -height的方式
+2、position: absolute、top: 50%、margin-top: -height的方式
 ```css
 #content {
     position: absolute;
