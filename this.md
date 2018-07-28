@@ -1,4 +1,4 @@
-# this的指向问题
+## this的指向问题
 * this的指向在函数定义的时候是确定不了的，只有函数执行的时候才能确定this到底指向谁，实际上this的最终指向的是那个调用它的对象
 
 * 这个函数中包含多个对象，尽管这个函数是被最外层的对象所调用，this指向的也只是它上一级的对象
@@ -6,7 +6,7 @@
 * 如果返回值是一个对象，那么this指向的就是那个返回的对象，如果返回值不是一个对象那么this还是指向函数的实例。
 function fn()  
 {  
-    this.user = '追梦子';  
+    this.user = '小磊哥er';  
     return function(){};
 }
 var a = new fn;  
@@ -14,11 +14,11 @@ console.log(a.user); //undefined
 
 function fn()  
 {  
-    this.user = '追梦子';  
+    this.user = '小磊哥er';  
     return undefined;
 }
 var a = new fn;  
-console.log(a); //fn {user: "追梦子"}
+console.log(a); //fn {user: "小磊哥er"}
 
 * js中typeof的返回值类型有Number、String、Null、Undefined、Object、Function
 

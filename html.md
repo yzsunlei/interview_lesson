@@ -1,5 +1,5 @@
-# HTML的一些问题
-## display: none;、visibility: hidden、opacity=0区别总结
+## HTML的一些问题
+### display: none;、visibility: hidden、opacity=0区别总结
 display: none;
 1、浏览器不会生成属性为display: none;的元素。 
 2、display: none;不占据空间（毕竟都不渲染啦），所以动态改变此属性时会引起重排。 
@@ -17,16 +17,16 @@ opacity=0
 3、opacity=0的元素依然能触发已经绑定的事件。 
 4、opacity,transition对她有效(毫无争议)
 
-## 行内元素和块状元素的区别
+### 行内元素和块状元素的区别
 行内元素：会在水平方向排列，不能包含块级元素，设置width无效，height无效（可以设置line-height），margin上下无效，padding上下无效
 块级元素：各占据一行，垂直方向排列。从新行开始结束接着一个断行
 
-## 使用link和@import有什么区别？
+### 使用link和@import有什么区别？
 1.link属于HTML标签，除了加载CSS外，还能用于定义RSS，定义rel连接属性等作用；而@import是CSS提供，只能加载CSS;
 2.页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载；
 3.import是CSS2.1提出的，只在IE5以上才能被识别，而link是HTML标签，无兼容问题；
 
-## 写出几种IE6 BUG的解决方法
+### 写出几种IE6 BUG的解决方法
 1、双边距BUG float引起的 使用display
 2、3像素问题使用float引用的使用display:inline -3px;
 3、超链接hover后点击失效，使用正确的书写顺序 link visited hover active
@@ -39,7 +39,7 @@ _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/W3CfunsLo
 7、select 在ie6下遮盖 使用iframe嵌套
 8、为什么没有办法定义1px左右的宽度器（IE6默认的行高造成的，使用over:hidden,zoom:0.08,line-height:1px）
 
-## CSS3新属性
+### CSS3新属性
 第 1 选择器
 第 2 RGBA和透明度
 第 3 多栏布局
@@ -54,6 +54,6 @@ _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/W3CfunsLo
 第 12 媒体查询
 第 13 语音
 
-## 布局方式
+### 布局方式
 * position：absolute；时，当left，right和width同时存在时，是width起作用；
 * 如何让这两种相互帮助起作用那，就是当让图片margin：auto；时。此时和可以让图片真正的居中，但此方法只适用于IE7+；

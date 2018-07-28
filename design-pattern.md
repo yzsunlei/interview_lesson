@@ -1,4 +1,6 @@
-## 单例模式
+## 几种常见的设计模式
+1、单例模式
+```javascript
 var single = (function(){
     var unique;
 
@@ -18,8 +20,10 @@ var single = (function(){
         getInstance : getInstance
     }
 })();
+```
 
-## 构造函数模式
+2、构造函数模式
+```javascript
 /**
  * 构造一个动物的函数 
  */
@@ -33,8 +37,10 @@ function Animal(name, color){
 // 实例一个对象
 var cat = new Animal('猫', '白色');
 console.log( cat.getName() );
+```
 
-## 工厂模式
+3、工厂模式
+```javascript
 function Animal(opts){
     var obj = new Object();
     obj.name = opts.name;
@@ -46,8 +52,10 @@ function Animal(opts){
 }
 var cat = Animal({name: '波斯猫', color: '白色'});
 cat.getInfo();
+```
 
-## 模块模式
+4、模块模式
+```javascript
 /**
  * 模块模式 = 封装大部分代码，只暴露必需接口
  */
@@ -66,4 +74,6 @@ var Car = (function(){
 })();
 Car.name();
 Car.color('红色');
-## 发布订阅模式
+```
+
+5、发布订阅模式

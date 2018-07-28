@@ -1,4 +1,5 @@
-## flex布局
+## flex布局使用小结
+1、flex布局的使用
 ```css
 .box{
   display: flex;
@@ -10,7 +11,7 @@
 }
 ```
 
-## 容器的属性(6个)
+2、 容器的属性(6个)
 1. flex-direction属性决定主轴的方向（即项目的排列方向）。
 flex-direction: row | row-reverse | column | column-reverse;
 2. flex-wrap属性定义，如果一条轴线排不下，如何换行。
@@ -24,7 +25,7 @@ align-items: flex-start | flex-end | center | baseline | stretch;
 6. align-content属性定义了多根轴线的对齐方式
 align-content: flex-start | flex-end | center | space-between | space-around | stretch;
 
-## 项目的属性(6个)
+3、项目的属性(6个)
 1. order属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。
 order: <integer>;
 2. flex-grow属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。

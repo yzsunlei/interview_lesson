@@ -1,6 +1,5 @@
-# 多列等高布局
-
-## 万能的flex
+## 如何实现多列等高布局
+1、万能的flex
 ```
 .container {
   display: flex;
@@ -8,7 +7,7 @@
 }
 ```
 
-## 使用table或者伪table
+2、使用table或者伪table
 ```css
 .container {
   display: table;
@@ -18,7 +17,7 @@
 }
 ```
 
-## 使用绝对定位
+3、使用绝对定位
 ```css
 .container {
   position: relative;
@@ -46,7 +45,7 @@
 }
 ```
 
-## 使用margin-bottom和padding-bottom大小相反的方式
+4、使用margin-bottom和padding-bottom大小相反的方式
 ```css
 .container {
   overflow: hidden;
